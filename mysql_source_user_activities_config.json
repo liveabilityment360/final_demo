@@ -1,0 +1,16 @@
+{
+    "include_objects": {
+        "mysql_databases": [
+            {
+              "database":"db_liveability",
+              "mysql_tables": [
+                {
+                  "table": "user_activity"
+                }
+              ]
+            }
+        ]
+    },
+    "exclude_objects":  {       
+    }
+  }
