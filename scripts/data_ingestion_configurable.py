@@ -123,7 +123,7 @@ class InjectTimestamp(beam.DoFn):
 
     def process(self, element):
         import time
-        element['_RAWTIMESTAMP'] = int(time.mktime(time.gmtime()))
+        element['created_date'] = int(time.mktime(time.gmtime()))
         return [element]
 
 
@@ -142,7 +142,7 @@ def _get_bq_schema(fields):
         bq_fields.append(
             TableFieldSchema(name=k, type=v, description='Field %s' % k))
     bq_fields.append(
-        TableFieldSchema(name='_RAWTIMESTAMP',
+        TableFieldSchema(name='created_date',
                          type='TIMESTAMP',
                          description='Injected timestamp'))
     return TableSchema(fields=bq_fields)
