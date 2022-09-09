@@ -193,7 +193,7 @@ python3 data_ingestion_configurable.py \
 --save_main_session True \
 --max_num_workers=100 \
 --autoscaling_algorithm=THROUGHPUT_BASED \
---region=us-west1 \
+--region=${LOCATION} \
 --staging_location=gs://${PROJECT_ID}/data/staging \
 --temp_location=gs://${PROJECT_ID}/data/temp \
 --project=${PROJECT_ID} \
@@ -207,7 +207,7 @@ python3 data_ingestion_configurable.py \
 --save_main_session True \
 --max_num_workers=100 \
 --autoscaling_algorithm=THROUGHPUT_BASED \
---region=us-west1 \
+--region=${LOCATION} \
 --staging_location=gs://${PROJECT_ID}/data/staging \
 --temp_location=gs://${PROJECT_ID}/data/temp \
 --project=${PROJECT_ID} \
@@ -221,7 +221,7 @@ python3 data_ingestion_configurable.py \
 --save_main_session True \
 --max_num_workers=100 \
 --autoscaling_algorithm=THROUGHPUT_BASED \
---region=us-west1 \
+--region=${LOCATION} \
 --staging_location=gs://${PROJECT_ID}/data/staging \
 --temp_location=gs://${PROJECT_ID}/data/temp \
 --project=${PROJECT_ID} \
@@ -235,7 +235,7 @@ python3 data_ingestion_configurable.py \
 --save_main_session True \
 --max_num_workers=100 \
 --autoscaling_algorithm=THROUGHPUT_BASED \
---region=us-west1 \
+--region=${LOCATION} \
 --staging_location=gs://${PROJECT_ID}/data/staging \
 --temp_location=gs://${PROJECT_ID}/data/temp \
 --project=${PROJECT_ID} \
@@ -249,7 +249,7 @@ python3 data_ingestion_configurable.py \
 --save_main_session True \
 --max_num_workers=100 \
 --autoscaling_algorithm=THROUGHPUT_BASED \
---region=us-west1 \
+--region=${LOCATION} \
 --staging_location=gs://${PROJECT_ID}/data/staging \
 --temp_location=gs://${PROJECT_ID}/data/temp \
 --project=${PROJECT_ID} \
@@ -263,7 +263,7 @@ python3 data_ingestion_configurable.py \
 --save_main_session True \
 --max_num_workers=100 \
 --autoscaling_algorithm=THROUGHPUT_BASED \
---region=us-west1 \
+--region=${LOCATION} \
 --staging_location=gs://${PROJECT_ID}/data/staging \
 --temp_location=gs://${PROJECT_ID}/data/temp \
 --project=${PROJECT_ID} \
@@ -277,7 +277,7 @@ python3 data_ingestion_configurable.py \
 --save_main_session True \
 --max_num_workers=100 \
 --autoscaling_algorithm=THROUGHPUT_BASED \
---region=us-west1 \
+--region=${LOCATION} \
 --staging_location=gs://${PROJECT_ID}/data/staging \
 --temp_location=gs://${PROJECT_ID}/data/temp \
 --project=${PROJECT_ID} \
