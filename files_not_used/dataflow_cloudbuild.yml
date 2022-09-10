@@ -1,0 +1,17 @@
+# gcloud builds submit --config=cloudbuild.yaml .
+steps:
+- id: '1 Run dataload'
+  name: 'gcr.io/cloud-builders/gcloud'
+  entrypoint: 'bash'
+  args:
+    - '-c'
+    - |-
+       if [ -d "dataflow/" ]; then
+        cd dataflow
+        echo "***** Dataflow Running ******"
+        echo "*** At environment: ****"
+        echo "*****************"
+       fi
+       bash dataflow_run.sh ${_DAGS_FOLDER}
+options:
+  logging: CLOUD_LOGGING_ONLY
