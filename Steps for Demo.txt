@@ -19,4 +19,9 @@ bash dataflow_run.sh
 terraform
 ----------
 cd terraform
-bash terraform_run.sh
+bash terraform_setup.sh
+
+datastream
+----------
+cd datastream
+bash datastream_setup.sh
