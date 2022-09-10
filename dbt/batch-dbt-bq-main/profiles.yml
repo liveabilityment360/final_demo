@@ -1,0 +1,16 @@
+my_new_project:  # your profile name from dbt_project.yml
+  target: dev    
+  # your development environment
+  outputs:  
+    dev:
+      type: bigquery
+      method: oauth
+      project: liveability-demo
+      # name of the project in BigQuery
+      dataset: transform_batchdata 
+      location: us-west1 
+      # your dataset for development (usually your name)
+      threads: 1
+      timeout_seconds: 300
+      priority: interactive
+      retries: 1
