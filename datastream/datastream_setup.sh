@@ -21,6 +21,8 @@ export DS_MYSQL_GCS_NAME="liveability-mysql-gcs-stream"
 export DS_SOURCE_JSON="mysql_source_user_activities_config.json"
 export DS_TARGET_JSON="gcs_destination_user_activities_config.json"
 
+export GOOGLE_APPLICATION_CREDENTIALS=../key.json
+
 
 #18.Creates a topic for the user activity table from CloudSQL and create a subscription from the same topic.
 gcloud pubsub topics create ${DS_PUBSUB_TOPIC}
@@ -50,7 +52,7 @@ gcloud datastream streams update ${DS_MYSQL_GCS_NAME} --location=${LOCATION} --s
 #25.Run the streaming, need to start streaming manually
 gcloud beta dataflow flex-template run datastream-replication1 \
         --project="${PROJECT}" --region="${LOCATION}" \
-        --template-file-gcs-location="gs://dataflow-templates-us-west1/latest/flex/Cloud_Datastream_to_BigQuery" \
+        --template-file-gcs-location="gs://dataflow-templates-us-central1/latest/flex/Cloud_Datastream_to_BigQuery" \
         --enable-streaming-engine \
         --parameters \
 inputFilePattern="gs://${PROJECT}/data/",\
