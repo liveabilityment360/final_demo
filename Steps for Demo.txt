@@ -1,0 +1,22 @@
+export PROJECT_ID="ment360-liveability-alpha"
+   
+gcloud config set project ${PROJECT_ID}
+
+git clone https://github.com/liveabilityment360/final_demo
+
+cd final_demo
+
+bash initial_setup.sh
+
+Username for github =liveabilityment360
+password=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
+
+Now run dataflow
+--------------------
+cd dataflow
+bash dataflow_run.sh
+
+terraform
+----------
+cd terraform
+bash terraform_run.sh
