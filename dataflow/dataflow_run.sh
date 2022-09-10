@@ -26,7 +26,7 @@ gcloud services enable compute.googleapis.com
 
 
 ############################# For data flow start ########################################################
-cd scripts
+cd dataflow
 export GOOGLE_APPLICATION_CREDENTIALS=key.json
 
 #28.Move the schema file to the current folder
