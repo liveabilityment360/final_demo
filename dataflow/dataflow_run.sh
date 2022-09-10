@@ -6,23 +6,6 @@ gcloud config set project ${PROJECT_ID}
 export LOCATION="us-west1"
 export BQ_DATASET="liveability"
 
-#6.Enable all the APIs
-
-# dataflow 
-gcloud services enable dataflow.googleapis.com
-#firestore
-gcloud services enable firestore.googleapis.com
-#appengine for firestore
-gcloud services enable appengine.googleapis.com
-#cloud sql
-gcloud services enable sqladmin.googleapis.com
-#datastream
-gcloud services enable datastream.googleapis.com
-#pubsubapi
-gcloud services enable pubsub.googleapis.com
-#cloudbuild
-gcloud services enable cloudbuild.googleapis.com
-gcloud services enable compute.googleapis.com
 
 
 ############################# For data flow start ########################################################
