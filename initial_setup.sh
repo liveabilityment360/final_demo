@@ -9,8 +9,8 @@ export Git_Root="https://github.com/liveabilityment360/final_demo"
 
 #3.Create the service account with same proj name and export it to a variable which can be used in later stages    
 gcloud iam service-accounts create ${PROJECT_ID} \
- --description="Service account for the Liveability project" \
- --display-name="Liveability Service Account"    
+	 --description="Service account for the Liveability project" \
+	  --display-name="Liveability Service Account"    
 
 export SERVICE_ACCOUNT_ID=${PROJECT_ID}
 
@@ -81,7 +81,7 @@ gsutil mb -l ${LOCATION} gs://${PROJECT_ID}
     
 #9.Create a datset in bq
 bq --location=${LOCATION} mk \
- --dataset ${BQ_DATASET} 
+	 --dataset ${BQ_DATASET} 
 
 #10.Clone the data and schema from git to cloud shell
 git clone ${Git_Root}
@@ -103,7 +103,3 @@ cp ~/key.json ~/final_demo/scripts/key.json
 git add .
 git commit -m "Key updated to the script"
 git push
-
-
-
-
