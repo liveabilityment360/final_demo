@@ -53,18 +53,18 @@ gcloud datastream streams update ${DS_MYSQL_GCS_NAME} --location=${LOCATION} --s
 
 #25.Run the streaming, need to start streaming manually
 gcloud beta dataflow flex-template run datastream-replication1 \
-        --project="${PROJECT}" --region="${LOCATION}" \
+        --project="${PROJECT_ID}" --region="${LOCATION}" \
         --template-file-gcs-location="gs://dataflow-templates-us-central1/latest/flex/Cloud_Datastream_to_BigQuery" \
         --enable-streaming-engine \
         --parameters \
-inputFilePattern="gs://${PROJECT}/data/",\
-gcsPubSubSubscription="projects/${PROJECT}/subscriptions/${DS_PUBSUB_SUBSCRIPTION}",\
-outputProjectId="${PROJECT}",\
+inputFilePattern="gs://${PROJECT_ID}/data/",\
+gcsPubSubSubscription="projects/${PROJECT_ID}/subscriptions/${DS_PUBSUB_SUBSCRIPTION}",\
+outputProjectId="${PROJECT_ID}",\
 outputStagingDatasetTemplate="${BQ_DATASET}",\
 outputDatasetTemplate="${BQ_DATASET}",\
 outputStagingTableNameTemplate="{_metadata_table}",\
 outputTableNameTemplate="{_metadata_table}_log",\
-deadLetterQueueDirectory="gs://${PROJECT}/dlq/",\
+deadLetterQueueDirectory="gs://${PROJECT_ID}/dlq/",\
 maxNumWorkers=2,\
 autoscalingAlgorithm="THROUGHPUT_BASED",\
 mergeFrequencyMinutes=1,\
