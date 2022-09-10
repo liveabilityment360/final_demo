@@ -6,28 +6,11 @@ gcloud config set project ${PROJECT_ID}
 export LOCATION="us-west1"
 export BQ_DATASET="liveability"
 
-#6.Enable all the APIs
-
-# dataflow 
-gcloud services enable dataflow.googleapis.com
-#firestore
-gcloud services enable firestore.googleapis.com
-#appengine for firestore
-gcloud services enable appengine.googleapis.com
-#cloud sql
-gcloud services enable sqladmin.googleapis.com
-#datastream
-gcloud services enable datastream.googleapis.com
-#pubsubapi
-gcloud services enable pubsub.googleapis.com
-#cloudbuild
-gcloud services enable cloudbuild.googleapis.com
-gcloud services enable compute.googleapis.com
 
 
 ############################# For data flow start ########################################################
 cd dataflow
-export GOOGLE_APPLICATION_CREDENTIALS=key.json
+export GOOGLE_APPLICATION_CREDENTIALS=../key.json
 
 #28.Move the schema file to the current folder
 cp ~/final_demo/schema/*.csv .
