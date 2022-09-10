@@ -23,6 +23,8 @@ export DS_TARGET_JSON="gcs_destination_user_activities_config.json"
 
 export GOOGLE_APPLICATION_CREDENTIALS=../key.json
 
+# Set the project.
+gcloud config set project ${PROJECT_ID}
 
 #18.Creates a topic for the user activity table from CloudSQL and create a subscription from the same topic.
 gcloud pubsub topics create ${DS_PUBSUB_TOPIC}
