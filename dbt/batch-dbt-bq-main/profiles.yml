@@ -5,7 +5,7 @@ my_new_project:  # your profile name from dbt_project.yml
     dev:
       type: bigquery
       method: oauth
-      project: liveability-demo
+      project: ment360-liveability-alpha
       # name of the project in BigQuery
       dataset: transform_batchdata 
       location: us-west1 
