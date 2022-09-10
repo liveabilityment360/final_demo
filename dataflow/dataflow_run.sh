@@ -133,6 +133,3 @@ python3 data_ingestion_configurable.py \
 
 #exit from the virtual environment, but this will completely go out of shell -need to look into this
 exit
-
-
-
