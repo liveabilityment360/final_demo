@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "ment360-liveability-demo",
+  "private_key_id": "9128568d9bcf267e4f668323ecb0063ae7224e85",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCsNooHHvDUVhtJ\nb6RZqQEExLBxKUayOXuFzoaDbte/QEP2CMdkbezKojpU7nQTLIOmy12jyiEBy5w1\nf7jF5gmwcnn+wX0oWngBYr927Zt1POB67/daJUsou8+Cn88GWElU4kFrAMYvxNTK\nG/M2BWOauViiZnEDXCZsO2kw9f15TeIYQiBD6O8LfPH+BDks8HaZ8DuDTTODj9y9\nSbrUR7q4qXTG8cQqWhyB/78vaeQVqZScgprd1cy+CCA9Wf27wIUwa1atOvhNiKRY\nFalWs1bTtjN3KD5zDYQQHxPejdD+IADk6DKnSrOjnCeQKPxHOF1SdyjUhSc/gk+E\nSPA2CyQTAgMBAAECggEAMmgCTaRGTHhpozyMx/uaQzmJBY5V1YvStm8lWyoh9yZJ\n3iViq2grc4I5fauQCR6x6CvFXFApChv9PIGGZVJ4So+vWpxq1Flqn8k2DorswkuP\nzxwW8+lPjvwt+GdrUsmbqT9Sc4319Hxx5jh5HzpDlcGjimFeueOKkYpwNzcBOrRP\nh7ts9EwSOWbWntpdp/aaTgnjUv+rlErcjKgkCu+zhrPwMz2LFv1246Uubmpq7oEQ\nppdH4BQTb0l3d6uVEdlZ6PY9XlgLRzaQ+k7JRWnclT3lFcMNjafpZFuzMEn2y7w5\nT7CSgnlRlEbWymmBYZcVgjjIDtBYIdu+mZ2nOENtmQKBgQDyUYF6Rm7Y3tuulheV\nWeFdjNTGaQ8zBoOzY6ImY2kyCChPQigyyre6EUamei87DRpYLtRsgUgz7f2UqAwK\n95dyIenrkgQbddqzLiUOPne1ufOO627JRGVL+d7zA4NuFaZ+io4FdmRVXAG95OPp\n3kpCNjYIryjmbfY97rHvP4gVCwKBgQC177lK5Av1lAzOxTrHF5rLgVt4j3037s4p\nE44KYyq3m1oy8tTCpQskQWmMtl2S+yW3wj67ucCF7jyYGXbbEMjga29WZk+Cmn4Q\nAcedNQ6zpI96eowEz3Uco2eTtrtrf/xeKvNafd9QgYDy231khgD0gSLEeyqiptRx\nHrRtFSUCGQKBgQC4r8J9jX0isgjBsgfbfxuzj4kEiEJbY5WxfjiyBYbB6VG/xu6Y\nd8U8fbpZXDrvSPdRSrAA2zBK1BM34DT9juPQy2RcdXfH7jV35626g4X97fJidbKE\nmCqUk6eHlJ/xoXK6c6P3Kdsi6/Mv5mqHbzMt79+TEt2bcygA4BKiBMwVLQKBgBJ5\nkGhRdgFvEkng71IOTJLDxQUeFQob/uVe7fqSDWFtriAkVoSZe+MnnU9DqYbmZ/Mc\nD4DCoRE4mwCa/V3Le4qGflzYsNRDWe/ILnwBSkfluwgl75gBdRP+Z+MxGCEXcwog\n9GtJAudK70w6C6askOZDQsOO+kpgBIykIJA/KG3pAoGAW+vBOVewC1/aaO1ohsgT\n/xZRmuoqKANLFd0DjZ+dCGrYl77man6vq7CExHQ4q2xfGjdWI7y0FXpkyW9ua7py\nxZ7pBa3KYzqL+0yYFpzob/cTFfQwv6efURyhMCC9gc4BLWrY3rDWg+ri9O/+P+OF\ncdoYB5KCFCb8308wNJFT8dw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "ment360-liveability-demo@ment360-liveability-demo.iam.gserviceaccount.com",
+  "client_id": "116383896354007373780",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ment360-liveability-demo%40ment360-liveability-demo.iam.gserviceaccount.com"
+}
