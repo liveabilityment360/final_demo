@@ -1,5 +1,5 @@
 #1.create a project and export it into a variable(project creation- manual)
-export PROJECT_ID="ment360-liveability-demo"
+export PROJECT_ID="ment360-liveability-alpha"
       
 #2.Sets the project,location &dataset
 gcloud config set project ${PROJECT_ID}
@@ -87,8 +87,8 @@ bq --location=${LOCATION} mk \
 git clone ${Git_Root}
 
 #11. Copy the files to cloud storage
-gsutil cp final_demo/data/* gs://${PROJECT_ID}/data/batch_data/
-gsutil cp final_demo/ddl/* gs://${PROJECT_ID}/ddl/
+gsutil cp ~/final_demo/data/* gs://${PROJECT_ID}/data/batch_data/
+gsutil cp ~/final_demo/ddl/* gs://${PROJECT_ID}/ddl/
 
 
 ############################# For data flow start ########################################################
