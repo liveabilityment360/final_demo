@@ -23,5 +23,6 @@ bash terraform_setup.sh
 
 datastream
 ----------
+cd ..
 cd datastream
 bash datastream_setup.sh
