@@ -99,9 +99,9 @@ gsutil cp ~/final_demo/ddl/* gs://${PROJECT_ID}/ddl/
 #copy the json key of service account to current folder
 #cp ~/key.json .
 
-cp ~/key.json ~/final_demo/scripts/key.json
-cp ~/key.json ~/final_demo/dataflow/key.json
-cp ~/key.json ~/final_demo/terraform/key.json
-git add .
-git commit -m "Key updated to the script"
-git push
+#cp ~/key.json ~/final_demo/scripts/key.json
+#cp ~/key.json ~/final_demo/dataflow/key.json
+#cp ~/key.json ~/final_demo/terraform/key.json
+#git add .
+#git commit -m "Key updated to the script"
+#git push
