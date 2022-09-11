@@ -1,0 +1,41 @@
+# gcloud builds submit --config=cloudbuild.yaml .
+steps:
+- id: '1 Batch Run dbt'
+  name: 'fishtownanalytics/dbt:${_DBT_VERSION}'
+  entrypoint: 'bash'
+  args:
+    - '-c'
+    - |-
+       if [ -d "etl_dbt_batch/" ]; then
+        cd etl_dbt_batch
+        echo "***** DBT RUN ******"
+        echo "*** At environment: ****"
+        echo "*****************"   
+       fi
+       dbt deps --profiles-dir .
+       if [[ $? == 1 ]]; then
+        echo '1'
+        exit 1
+       fi
+       dbt debug --target ${_DBT_TARGET} --profiles-dir .
+       if [[ $? == 1 ]]; then
+        echo '1'
+        exit 1
+       fi
+       dbt run --target ${_DBT_TARGET} --profiles-dir .
+       if [[ $? == 1 ]]; then
+        echo '1'
+        exit 1
+       fi
+       dbt test --data --target ${_DBT_TARGET} --profiles-dir .
+       if [[ $? == 1 ]]; then
+        echo '1'
+        exit 1
+       fi       
+timeout: 1200s
+tags: ['dbt']
+options:
+  logging: CLOUD_LOGGING_ONLY
+substitutions:
+  _DBT_VERSION: '0.21.0'
+  _DBT_TARGET: 'dev'
