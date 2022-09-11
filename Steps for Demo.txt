@@ -9,7 +9,7 @@ cd final_demo
 bash initial_setup.sh
 
 Username for github =liveabilityment360
-password=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
+password=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
 
 Now run dataflow
 --------------------
