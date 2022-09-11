@@ -1,4 +1,4 @@
-export PROJECT_ID="ment360-liveability-alpha"
+export PROJECT_ID="mvp-liveability"
    
 gcloud config set project ${PROJECT_ID}
 
