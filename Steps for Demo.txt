@@ -11,10 +11,6 @@ bash initial_setup.sh
 Username for github =liveabilityment360
 password=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
 
-Now run dataflow
---------------------
-cd dataflow
-bash dataflow_run.sh
 
 terraform
 ----------
@@ -26,3 +22,10 @@ datastream
 cd ..
 cd datastream
 bash datastream_setup.sh
+
+Now run dataflow
+--------------------
+cd ..
+cd dataflow
+bash dataflow_run.sh
+
