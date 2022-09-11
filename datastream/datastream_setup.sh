@@ -1,5 +1,5 @@
-export PROJECT_ID="ment360-liveability-alpha"
-export LOCATION="us-west1"
+export PROJECT_ID="mvp-liveability"
+export LOCATION="australia-southeast1"
 export BQ_DATASET="liveability"
 
  #13.Export the values for cloud sql
