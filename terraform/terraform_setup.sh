@@ -1,7 +1,7 @@
 #1.create a project and export it into a variable(project creation- manual)
-export PROJECT_ID="ment360-liveability-alpha"
+export PROJECT_ID="mvp-liveability"
 gcloud config set project ${PROJECT_ID}
-export LOCATION="us-west1"
+export LOCATION="australia-southeast1"
 export GOOGLE_APPLICATION_CREDENTIALS=../key.json
 export MYSQL_INSTANCE="aus-liveability-demo-mysql"
 
