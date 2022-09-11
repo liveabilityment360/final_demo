@@ -201,28 +201,78 @@ resource "google_sql_database_instance" "liveability-mysql" {
       
        # [START cloud_sql_mysql_instance_datastream]
       authorized_networks {
-        name = "Datastream_us_west1_01"
+        name = "Datastream_US_Central1_01"
+        value = "34.72.28.29"
+        expiration_time = "3021-11-15T16:19:00.094Z"
+      }
+      authorized_networks {
+        name = "Datastream_US_Central1_02"
+        value = "34.67.234.134"
+        expiration_time = "3021-11-15T16:19:00.094Z"
+      }
+      authorized_networks {
+        name = "Datastream_US_Central1_03"
+        value = "34.67.6.157"
+        expiration_time = "3021-11-15T16:19:00.094Z"
+      }
+      authorized_networks {
+        name = "Datastream_US_Central1_04"
+        value = "34.72.239.218"
+        expiration_time = "3021-11-15T16:19:00.094Z"
+      }
+      authorized_networks {
+        name = "Datastream_US_Central1_05"
+        value = "34.71.242.81"
+        expiration_time = "3021-11-15T16:19:00.094Z"
+      }
+      authorized_networks {
+        name = "Datastream_US_West1_01"
         value = "35.247.10.221"
         expiration_time = "3021-11-15T16:19:00.094Z"
       }
       authorized_networks {
-        name = "Datastream_us_west1_02"
+        name = "Datastream_US_West1_02"
         value = "35.233.208.195"
         expiration_time = "3021-11-15T16:19:00.094Z"
       }
       authorized_networks {
-        name = "Datastream_us_west1_03"
+        name = "Datastream_US_West1_03"
         value = "34.82.253.59"
         expiration_time = "3021-11-15T16:19:00.094Z"
       }
       authorized_networks {
-        name = "Datastream_us_west1_04"
+        name = "Datastream_US_West1_04"
         value = "35.247.95.52"
         expiration_time = "3021-11-15T16:19:00.094Z"
       }
       authorized_networks {
-        name = "Datastream_us_west1_05"
+        name = "Datastream_US_West1_05"
         value = "34.82.254.46"
+        expiration_time = "3021-11-15T16:19:00.094Z"
+      }
+      authorized_networks {
+        name = "Datastream_AU_SouthEast1_01"
+        value = "34.116.127.89"
+        expiration_time = "3021-11-15T16:19:00.094Z"
+      }
+      authorized_networks {
+        name = "Datastream_AU_SouthEast1_02"
+        value = "35.201.23.39"
+        expiration_time = "3021-11-15T16:19:00.094Z"
+      }
+      authorized_networks {
+        name = "Datastream_AU_SouthEast1_03"
+        value = "35.197.161.138"
+        expiration_time = "3021-11-15T16:19:00.094Z"
+      }
+      authorized_networks {
+        name = "Datastream_AU_SouthEast1_04"
+        value = "35.244.113.19"
+        expiration_time = "3021-11-15T16:19:00.094Z"
+      }
+      authorized_networks {
+        name = "Datastream_AU_SouthEast1_05"
+        value = "35.201.16.163"
         expiration_time = "3021-11-15T16:19:00.094Z"
       }
       # [END cloud_sql_mysql_instance_datastream]
