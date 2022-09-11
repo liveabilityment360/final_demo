@@ -1,9 +1,9 @@
 #1.create a project and export it into a variable(project creation- manual)
-export PROJECT_ID="ment360-liveability-alpha"
+export PROJECT_ID="mvp-liveability"
       
 #2.Sets the project,location &dataset
 gcloud config set project ${PROJECT_ID}
-export LOCATION="us-west1"
+export LOCATION="australia-southeast1"
 export BQ_DATASET="liveability"
 
 
