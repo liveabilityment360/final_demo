@@ -1,8 +1,19 @@
 # CloudSQL MySQL instance creation point-in-time-recovery.
 
+
+module "gcloud" {
+  source  = "terraform-google-modules/gcloud/google"
+  version = "3.1.1"
+}
+
+provider "google" {
+  region  = var.gcp_region
+  project = var.gcp_project
+}
+  
 resource "google_sql_database_instance" "liveability-mysql" {
   name             = "mvp-liveability"
-  region           = "australia-southeast1"
+  region           = var.gcp_region
   database_version = "MYSQL_8_0"
   settings {
     #tier = "db-f1-micro"
