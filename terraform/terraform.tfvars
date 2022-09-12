@@ -1,7 +1,7 @@
 variable "gcp_region" {
   type        = string
   description = "Region of Liveability project execution"
-  default     = "Sydeney"
+  default     = "Sydney"
 }
 
 variable "gcp_zone" {
