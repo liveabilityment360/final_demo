@@ -5,7 +5,16 @@ module "gcloud" {
   source  = "terraform-google-modules/gcloud/google"
   version = "3.1.1"
 }
+variable "gcp_region" {
+  type        = string
+  description = "Region of Liveability project execution"
+  default     = "australia-southeast1"
+}
 
+variable "gcp_project" {
+  type        = string
+  description = "Project to use for this config" 
+}
 provider "google" {
   region  = var.gcp_region
   project = var.gcp_project
