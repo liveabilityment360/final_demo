@@ -71,6 +71,7 @@ gcloud services enable pubsub.googleapis.com
 #cloudbuild
 gcloud services enable cloudbuild.googleapis.com
 gcloud services enable compute.googleapis.com
+gcloud services enable iam.googleapis.com
 
 #7.Create fire store DB for schema to be used in dataflow
 gcloud app create --region=${LOCATION}
