@@ -3,7 +3,7 @@ export PROJECT_ID="mvp-liveability"
 gcloud config set project ${PROJECT_ID}
 export LOCATION="australia-southeast1"
 export GOOGLE_APPLICATION_CREDENTIALS=../key.json
-export MYSQL_INSTANCE="aus-liveability-demo-mysql"
+export MYSQL_INSTANCE="mvp-liveability"
 
 
 #12.Create the SQL instance using terraform
