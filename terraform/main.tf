@@ -1,4 +1,11 @@
 # CloudSQL MySQL instance creation point-in-time-recovery.
+
+resource "google_project_service" "project" {
+  project = "liveability-beta"
+  service = "iam.googleapis.com"
+
+  disable_dependent_services = true
+}
 resource "google_sql_database_instance" "liveability-mysql" {
   name             = "mvp-liveability"
   region           = "australia-southeast1"
