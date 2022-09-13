@@ -1,3 +1,3 @@
-gcp_project="ment360live-beta"
+gcp_project= "ment360live-beta"
 
 
