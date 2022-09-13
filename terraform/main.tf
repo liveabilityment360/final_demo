@@ -20,8 +20,9 @@ provider "google" {
   project = var.gcp_project
 }
   
+
 resource "google_sql_database_instance" "liveability-mysql" {
-  name             = "mvp-liveability"
+  name             = "aus-liveability-demo-mysql"
   region           = var.gcp_region
   database_version = "MYSQL_8_0"
   settings {
