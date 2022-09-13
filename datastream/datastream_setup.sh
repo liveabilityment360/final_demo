@@ -1,4 +1,4 @@
-export PROJECT_ID="ment360live-alpha"
+export PROJECT_ID="ment360live-beta"
 export LOCATION="australia-southeast1"
 export BQ_DATASET="liveability"
 
