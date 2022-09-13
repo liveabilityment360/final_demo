@@ -33,4 +33,3 @@ bq mk -t --description "shoppingcentres"  \liveability.shoppingcentres  Name:STR
 
 #create sportsclubs table
 bq mk -t --description "sportsclubs"  \liveability.sportsclubs  Name:STRING,Categories:STRING,Address:STRING,City:STRING,State:STRING,Postcode:STRING,Phone:STRING,Website:STRING,Email:STRING,Fax:STRING,Latitude:STRING,Longitude:STRING,Employees:STRING,Established:STRING,Licence_No:STRING,ABN_Status:STRING,ABN:STRING,ABN_Name:STRING,Accuracy:STRING,ABN_2:STRING,ACN:STRING,Created_Date:STRING
-
