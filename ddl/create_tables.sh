@@ -1,5 +1,17 @@
 
+export PROJECT_ID="liveability-beta"
+gcloud config set project ${PROJECT_ID}
+export LOCATION="australia-southeast1"
+export GOOGLE_APPLICATION_CREDENTIALS=../key.json
+export MYSQL_INSTANCE="mvp-liveability"
 
+#Datastream user creation replica process and allowing privilleges for the 'datastream' user.
+SERVICE_ACCOUNT=$(gcloud sql instances describe ${MYSQL_INSTANCE} | grep serviceAccountEmailAddress | awk '{print $2;}')
+gsutil iam ch serviceAccount:$SERVICE_ACCOUNT:objectViewer gs://${PROJECT_ID}
+gcloud sql import sql ${MYSQL_INSTANCE} gs://${PROJECT_ID}/ddl/create-ds-user-privileges.sql --quiet
+
+#Create table in mysql
+gcloud sql import sql ${MYSQL_INSTANCE} gs://${PROJECT_ID}/ddl/ddl_user_activity.sql --quiet
 
 #create childcare center table
 bq mk -t --description "childcare centers"  \liveability.childcarecenters  Name:STRING,Categories:STRING,Address:STRING,City:STRING,State:STRING,Postcode:STRING,Phone:STRING,Fax:STRING,Latitude:STRING,Longitude:STRING,Employees:STRING,Established:STRING,ABN_Status:STRING,ABN:STRING,ABN_Name:STRING,Accuracy:STRING,ABN_2:STRING,ACN:STRING,Created_Date:STRING
