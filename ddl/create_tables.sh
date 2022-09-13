@@ -3,7 +3,7 @@ export PROJECT_ID="ment360live-alpha"
 gcloud config set project ${PROJECT_ID}
 export LOCATION="australia-southeast1"
 export GOOGLE_APPLICATION_CREDENTIALS=../key.json
-export MYSQL_INSTANCE="mvp-liveability"
+export MYSQL_INSTANCE="aus-liveability-demo-mysql"
 
 #Datastream user creation replica process and allowing privilleges for the 'datastream' user.
 SERVICE_ACCOUNT=$(gcloud sql instances describe ${MYSQL_INSTANCE} | grep serviceAccountEmailAddress | awk '{print $2;}')
