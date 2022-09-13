@@ -21,7 +21,7 @@ provider "google" {
 }
   
 
-resource "google_sql_database_instance" "liveability-mysql" {
+resource "google_sql_database_instance" "instance-mysql" {
   name             = "aus-liveability-demo-mysql"
   region           = var.gcp_region
   database_version = "MYSQL_8_0"
@@ -306,7 +306,7 @@ resource "google_sql_database_instance" "liveability-mysql" {
 # Generates the user for CloudSQL database
 resource "google_sql_user" "users" {
   name     = "appsheet"
-  instance = google_sql_database_instance.liveability-mysql.name
+  instance = google_sql_database_instance.instance-mysql.name
   host = "%"
   password = "12345678"
 }
@@ -314,5 +314,5 @@ resource "google_sql_user" "users" {
 # Generates the database in cloud sql
 resource "google_sql_database" "database" {
   name     = "db_liveability"
-  instance = google_sql_database_instance.liveability-mysql.name
+  instance = google_sql_database_instance.instance-mysql.name
 }
