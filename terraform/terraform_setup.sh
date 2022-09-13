@@ -1,10 +1,9 @@
 #1.create a project and export it into a variable(project creation- manual)
-export PROJECT_ID="mvp-liveability"
+export PROJECT_ID="ment360live-alpha"
 gcloud config set project ${PROJECT_ID}
 export LOCATION="australia-southeast1"
 export GOOGLE_APPLICATION_CREDENTIALS=../key.json
-export MYSQL_INSTANCE="mvp-liveability"
-
+export MYSQL_INSTANCE="aus-liveability-demo-mysql"
 
 #12.Create the SQL instance using terraform
 terraform init
