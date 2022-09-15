@@ -1,4 +1,7 @@
 export PROJECT_ID="proj-liveability"
+# Set the project.
+gcloud config set project ${PROJECT_ID}
+
 export LOCATION="australia-southeast1"
 export BQ_DATASET="liveability"
 
@@ -23,10 +26,10 @@ export DS_MYSQL_GCS_NAME="liveability-mysql-to-gcs-stream"
 export DS_SOURCE_JSON="mysql_source_user_activities_config.json"
 export DS_TARGET_JSON="gcs_destination_user_activities_config.json"
 
-export GOOGLE_APPLICATION_CREDENTIALS=../key.json
+#export GOOGLE_APPLICATION_CREDENTIALS=../key.json
+export GOOGLE_APPLICATION_CREDENTIALS= gs://${PROJECT_ID}/json_key/key.json
 
-# Set the project.
-gcloud config set project ${PROJECT_ID}
+
 
 #18.Creates a topic for the user activity table from CloudSQL and create a subscription from the same topic.
 gcloud pubsub topics create ${DS_PUBSUB_TOPIC}
