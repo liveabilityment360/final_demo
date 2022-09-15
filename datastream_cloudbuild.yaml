@@ -16,7 +16,7 @@ steps:
   - |
       if [ -d "datastream/" ]; then
         cd datastream
-        echo "*************** DDL execution ******************"
+        echo "*************** Stream execution ******************"
         echo "******* At environment: ********"
         echo "*************************************************"
         bash "datastream_setup.sh"
