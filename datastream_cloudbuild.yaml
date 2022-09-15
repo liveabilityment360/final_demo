@@ -19,7 +19,7 @@ steps:
         echo "*************** DDL execution ******************"
         echo "******* At environment: ********"
         echo "*************************************************"
-        bash "create_tables.sh"
+        bash "datastream_setup.sh"
       fi
  
 options:
