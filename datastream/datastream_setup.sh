@@ -15,6 +15,7 @@ export GCS_DS_PATH_PREFIX="/data/stream_data/"
 export DS_PUBSUB_TOPIC="liveability-topic"
 export DS_PUBSUB_SUBSCRIPTION="liveability-subscription"
 export DS_DIR_PATH="data/stream_data/"
+export Dataflow_REPLICATION="liveability-dataflow-replication"
 
 #15.Parameters for the Datastream creation.
 export DS_MYSQL_GCS_NAME="liveability-mysql-gcs-stream"
@@ -52,7 +53,7 @@ gcloud datastream streams create ${DS_MYSQL_GCS_NAME} --location=${LOCATION} --d
 gcloud datastream streams update ${DS_MYSQL_GCS_NAME} --location=${LOCATION} --state=RUNNING --update-mask=state
 
 #25.Run the streaming, need to start streaming manually
-gcloud beta dataflow flex-template run datastream-replication1 \
+gcloud beta dataflow flex-template run ${Dataflow_REPLICATION} \
         --project="${PROJECT_ID}" --region="${LOCATION}" \
         --template-file-gcs-location="gs://dataflow-templates-us-central1/latest/flex/Cloud_Datastream_to_BigQuery" \
         --enable-streaming-engine \
