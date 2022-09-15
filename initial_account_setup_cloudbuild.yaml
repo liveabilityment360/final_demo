@@ -1,0 +1,16 @@
+steps:
+- id: 'service account'
+  name: 'gcr.io/cloud-builders/gcloud'
+  entrypoint: 'bash'
+  args:
+    - '-c'
+    - |-
+       if [ -d "setup/" ]; then
+        cd setup
+        echo "***************Setting up the service account and roles ******************"
+        echo "******* At environment: ********"
+        echo "*************************************************"
+       fi
+       bash initial_account_setup.sh
+options:
+ logging: CLOUD_LOGGING_ONLY
