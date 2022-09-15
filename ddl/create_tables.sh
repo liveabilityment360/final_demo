@@ -2,7 +2,12 @@
 export PROJECT_ID="proj-liveability"
 gcloud config set project ${PROJECT_ID}
 export LOCATION="australia-southeast1"
-export GOOGLE_APPLICATION_CREDENTIALS=../key.json
+
+#export GOOGLE_APPLICATION_CREDENTIALS=../key.json
+#export GOOGLE_APPLICATION_CREDENTIALS= gs://${PROJECT_ID}/json_key/key.json
+gsutil cp gs://${PROJECT_ID}/json_key/key.json .
+export GOOGLE_APPLICATION_CREDENTIALS=key.json
+
 export MYSQL_INSTANCE="aus-liveability-demo-mysql"
 
 #Datastream user creation replica process and allowing privilleges for the 'datastream' user.
