@@ -1,5 +1,5 @@
 
-export PROJECT_ID="liveability-gama"
+export PROJECT_ID="proj-liveability"
 gcloud config set project ${PROJECT_ID}
 export LOCATION="australia-southeast1"
 export GOOGLE_APPLICATION_CREDENTIALS=../key.json
