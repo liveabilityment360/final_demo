@@ -1,4 +1,4 @@
-export PROJECT_ID="liveability-gama"
+export PROJECT_ID="proj-liveability"
 export LOCATION="australia-southeast1"
 export BQ_DATASET="liveability"
 
